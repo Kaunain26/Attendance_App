@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/btnCreateSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="7dp"
+        android:src="@drawable/add_icon" />
+
+    <ImageView
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btnCreateSheet"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="7dp"
+        android:src="@drawable/help_icon" />
+
+    <TextView
+        android:id="@+id/txtTitleNameAttendSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/muli_extrabold"
+        android:text="Attendance Sheets"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitleNameAttendSheet"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/attendance_sheet_list_items"
+       />
+
+    <LinearLayout
+        android:id="@+id/llNoAttendanceSheets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_no_records" />
+
+        <TextView
+            android:id="@+id/hintMessageMainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="There is no Attendance sheets to display here"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/hintSmallMessageMainScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_sans"
+            android:text="Create one from add button"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

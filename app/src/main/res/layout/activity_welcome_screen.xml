@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen_button_background"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/trade_winds"
+        android:includeFontPadding="true"
+        android:text="Welcome Back"
+        android:textAlignment="center"
+        android:textColor="#636265"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@+id/txtWelcomeText"
+        android:layout_marginTop="-90dp"
+        android:src="@drawable/welcome_screen_logo" />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="136dp"
+        android:background="@color/lightYellow"
+        android:text="Let's Get Started"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+</RelativeLayout>

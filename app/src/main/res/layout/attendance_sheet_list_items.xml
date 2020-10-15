@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginRight="15dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:baselineAligned="false"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtSubjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Basics of Kotlin"
+            android:textColor="#616161"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSubCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_toRightOf="@+id/txtSubjectName"
+            android:text="(18CS61)"
+            android:textColor="#616161"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtClassYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSubCode"
+            android:layout_margin="5dp"
+            android:text="Second Year"
+            android:textColor="#616161"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtLecturerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtClassYear"
+            android:layout_margin="5dp"
+            android:text="by Arvind "
+            android:textColor="#616161"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTotalStud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

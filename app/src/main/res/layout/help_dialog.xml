@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/swipe_right" />
+
+        <TextView
+            android:id="@+id/txtRightSwipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgSwipe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text=" Do Left Swipe To Delete Any Item"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtRightSwipe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/lightBlue"
+            android:text="Next"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnGotIt"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtRightSwipe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/lightYellow"
+            android:text="Got it!"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

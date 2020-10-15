@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen_button_background"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnArrowBackCreateAttend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="6dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/txtTitleNameCreateAttendSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Create Attendance Sheet"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imgSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/save_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Note : ( * )  mandatory fields" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Prof. or Lecturer name*"
+        app:boxStrokeColor="#90caf9"
+        app:boxStrokeErrorColor="#f33c3c"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="#000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLectureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="22" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Subject name*"
+        app:boxStrokeColor="#90caf9"
+        app:boxStrokeErrorColor="#f33c3c"
+        app:boxStrokeWidthFocused="2dp"
+        app:counterMaxLength="22"
+        app:hintTextColor="#000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="22" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Subject code"
+        app:boxStrokeColor="#349ff6"
+        app:boxStrokeErrorColor="#f33c3c"
+        app:boxStrokeWidthFocused="2dp"
+        app:hintTextColor="#000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSubjectCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txtChooseClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Year:"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/mSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/txtChooseClass" />
+    </RelativeLayout>
+</LinearLayout>

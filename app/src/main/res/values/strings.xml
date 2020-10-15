@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Attendance App</string>
+    <string name="course"><![CDATA[Course & Branch]]></string>
+
+    <string name="open_navigation_drawer">Open</string>
+    <string name="close_navigation_drawer">Close</string>
+</resources>

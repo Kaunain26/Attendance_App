@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/attendanceSheet"
+            android:icon="@drawable/attendance_sheet_icon"
+            android:title="Attendance Sheet"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/attendanceHistory"
+            android:icon="@drawable/attendance_history"
+            android:title="Attendance History"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/studentInformation"
+            android:icon="@drawable/student_details"
+            android:title="Student Information"
+            app:showAsAction="never" />
+    </group>
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/mShare"
+                android:icon="@drawable/share_icon"
+                android:title="Share"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/mRate"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
