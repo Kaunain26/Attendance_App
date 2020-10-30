@@ -15,4 +15,9 @@
   ![](AppImages/attendance_app_ui_pic_3.jpg)
   ![](AppImages/attendance_app_ui_pic_2.jpg)
   ![](AppImages/attendance_app_ui_pic_1.jpg)
-  ![](AppImages/attendance_app_video.jpg)
+  
+  
+  **APP DEMO**
+  Click here to Watch Demo
+  
+  [![Click here to Watch Demo](https://com-radiology.sites.medinfo.ufl.edu/files/2013/05/demo.jpg)](https://youtu.be/n2JQfUzG03s)
