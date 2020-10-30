@@ -11,3 +11,5 @@
   This app contains local database i.e., **Room database**, for saving all these attendances 
   
   Here are some screenshots
+  
+  ![](AppImages/attendance_app_ui_pic_1)
