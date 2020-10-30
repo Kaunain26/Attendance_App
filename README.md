@@ -15,3 +15,4 @@
   ![](AppImages/attendance_app_ui_pic_3.jpg)
   ![](AppImages/attendance_app_ui_pic_2.jpg)
   ![](AppImages/attendance_app_ui_pic_1.jpg)
+  ![](AppImages/attendance_app_video.jpg)
